@@ -4,7 +4,9 @@
   "description": "This a POC to test redis and Node",
   "main": "index.js",
   "scripts": {
-    "start": "node noderedisdemo.js"
+    "start": "node noderedisdemo.js",
+    "publisher": "node publisher.js",
+    "subscriber": "node subscriber.js"
   },
   "keywords": [
     "redis",
