@@ -1,5 +1,9 @@
+const dotenv = require('dotenv');
+
+dotenv.config('./config.env');
+
 const redis = require('redis'),
-  client = redis.createClient(6379, 'localhost');
+  client = redis.createClient(process.env.PORT, process.env.HOST);
 
 // On error
 client.on('error', (err) => console.log(`Error event ${client.host}:${client.port} - ${err}`));
