@@ -14,5 +14,8 @@
     "NoSQL"
   ],
   "author": "Matheus Viana",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
 }
