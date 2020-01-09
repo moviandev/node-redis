@@ -4,8 +4,9 @@ const redis = require('redis'),
 // On error
 client.on('error', (err) => console.log(`Error event ${client.host}:${client.port} - ${err}`));
 
-client.set('hello', 'Hello ', redis.print);
-client.append('hello', 'world', redis.print);
+client.set('city', 'São Paulo ', redis.print);
+client.set('country', 'BR', redis.print);
+client.set('Date', new Date(), redis.print);
 
 client.get('city', (err, res) => {
   if (err) console.log(err);
@@ -13,4 +14,14 @@ client.get('city', (err, res) => {
   console.log(res.toString());
 });
 
+client.get('country', (err, res) => {
+  if (err) console.log(err);
 
+  console.log(res.toString());
+});
+
+client.get('Date', (err, res) => {
+  if (err) console.log(err);
+
+  console.log(res);
+});
