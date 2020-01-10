@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node noderedisdemo.js",
     "publisher": "node publisher.js",
-    "subscriber": "node subscriber.js"
+    "subscriber": "node subscriber.js",
+    "promise": "node redispromise.js"
   },
   "keywords": [
     "redis",

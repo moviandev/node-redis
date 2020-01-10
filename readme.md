@@ -12,4 +12,11 @@ To test subscriber and publisher you should run subscriber first and publisher a
   npm run subscriber
   npm run publisher
 ```
+
+To test redis promise you should run: 
+```bash
+  npm run promise
+```
+then hit localhost:3000
+
 Thanks all.
